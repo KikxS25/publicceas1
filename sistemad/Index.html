@@ -1,0 +1,245 @@
+<!-- Especifica la versión de HTML utilizada -->
+<!DOCTYPE html>
+<!-- Creado por Kixs Sanz -->
+<!-- Especifica el lenguaje principal de la página -->
+<html lang="en">
+<head>
+    <!-- Especifica la codificación de caracteres utilizada -->
+    <meta charset="UTF-8">
+    <!-- Define la escala de visualización en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define el título de la página que aparecerá en la pestaña del navegador -->
+    <title>Sistema Web de Audiencias</title>
+    <!-- Agrega un icono que se mostrará en la pestaña del navegador -->
+    <link rel="shortcut icon" href="/sistemad/escudotabxs.ico" type="image/x-icon">
+    <!-- Agrega una hoja de estilo externa llamada "Stylus.css" -->
+    <link rel="stylesheet" href="/sistemad/Stylus.css">  
+    <!-- Agrega archivos de script externos para agregar funcionalidades a la página -->
+    <!-- FontAwesome para agregar iconos personalizados -->
+    <script src="https://kit.fontawesome.com/7e83b8a69c.js" crossorigin="anonymous"></script>
+    <!-- JQuery para simplificar la manipulación de DOM y eventos -->
+    <!-- Waypoints para detectar la posición del usuario en la página -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<!-- Fin del encabezado de la página -->
+</head>
+<!-- Botón para desplazarse hacia arriba de la página -->
+<div class="scroll-up-btn">
+    <!-- Icono de flecha hacia arriba -->
+    <i class="fas fa-angle-up"></i>
+</div>
+<!--Navegación de la pagina, menú-->
+<nav class="navbar">
+    <div class="max-width">
+        <!-- Logo de la página con un enlace externo -->
+        <div class="logo"><a href="https://tabasco.gob.mx/ceas" target="_blank"><img src="/sistemad/Logo CEAS TABASCO chico.png" alt="LogoCEAS"></a></div>
+        <!-- Menú de navegación con enlaces internos -->
+        <ul class="menu">
+            <li><a href="#Inicio" class="menu-btn"> Inicio</a></li>
+            <li><a href="#Instrucciones" class="menu-btn">Instrucciones</a></a></li>
+            <li><a href="https://citasd.000webhostapp.com/ccrud/frontend/index.php">Cédula de audiencia</a></li>
+            <li><a href="#Contacto" class="menu-btn">Contacto al desarrollador</a></li>
+            <li><a href="" class="menu-btn"></a></li>
+        </ul>
+        <!-- Botón para activar o desactivar el menú en dispositivos móviles -->
+        <div class="menu-btn">
+        <!-- Icono de tres líneas horizontales -->
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+<!-- Fin de la barra de navegación -->
+
+<!-- Sección de home -->
+<section class="home" id="home">
+    <div class="max-width">
+        <div class="home-content">
+            <div class="home-content">
+                <div style="max-width: 50%;">
+                <img class="center" src="/sistemad/logosaliados1.png" style="width: 100%; max-width: 250px" alt="TabascoEscudo" id="Inicio"> 
+                    </div>
+                <br>
+                <br>
+<h1 class="encabezados1"> Comision Estatal de Agua y Saneamiento</h1>
+<h2 class="encabezados1">Dirección de Operación, Mantenimiento y Control del Agua</h2>
+        </div>
+    </div>
+</section>
+
+<!-- Sección sobre -->
+<section class="about">
+    <div class="max-width">
+        <!-- Título de la sección -->
+        <h2 class="title" id="Instrucciones">Instrucciones</h2>
+        <!-- Contenido de la sección -->
+        <div class="about-content">
+            <!-- Columna izquierda con imagen -->
+            <div class="column left">
+                <img src="/sistemad/instruc.png" alt="instruciones">
+            </div>
+            <!-- Columna derecha con texto de instrucciones -->
+            <div class="column right">
+                <!-- texto 1--->
+                    <div class="text"><p>¡Bienvenido(a) al sistema web de audiencias! Por favor, asegúrate de llenar todos los campos requeridos correctamente. En el campo de número telefónico, es necesario incluir los 10 dígitos correspondientes, ya sean locales o de celular.</p>
+                        <br>
+                        <p><b>Por favor antes de enviar los datos, revise cuidadosamente que los datos que envia son correctos.</b></p>
+                        <br>
+                        <p>Despues de llenar los campos requeridos, le aparecerá el turno que le corresponde, en la tabla debajo del formulario que envió. </p>
+                        <br>   
+                        <p>¡Gracias por usar nuestro sistema web de audiencias! ¡Que tenga un excelente día!</p>
+                    </div>
+                    <br>
+                    <!-- Enlace para ir a la cédula de audiencia -->
+                    <a href="https://citasceas.desarrolloweb.club/frontend/?fbclid=IwAR3hRLHDNMqhcOVShZdO9_DL7E71Z3o6szuInMQVrpi-k3q_AbPObL6KkCo"> Ir a la Cédula de Audiencia</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Sección de portada -->
+<section class="portrait">
+    <div class="max-width">
+        <!-- Saltos de línea para ajustar el contenido -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- Texto centrado con un tamaño de fuente grande y un color personalizado -->
+        <p class="center" style="color: #802434; font-size: xx-large;"><b>Siempre ahí, siempre dispuestos.</b></p>
+    </div>
+</section>
+
+<!-- Sección de cédula de audiencia -->
+    <!--Empieza la parte de contacto al desarrollador  -->
+<section class="contact">
+    <div class="max-width">
+        <h2 class="title" id="Contacto">Conctacto al desarrollador</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="icons">
+                    <div class="row">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <div class="info">
+                            <div class="head">Lic. Enrique Sánchez Silván</div>
+                            <div class="sub-title"><B>Desarrollador en tecnologías Web</B></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">Dirección</div>
+                            <div class="sub-title"><B>Boulevard Adolfo Ruiz Cortines 1205, Adolfo Lopez Mateos, 86040 Villahermosa, Tab.</B></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="info">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <!-- Campos de entrada para el nombre completo, correo electrónico y teléfono -->
+                    <div class="fields">
+                <form class="contact-form" action="https://formsubmit.co/alfaceduladomcca@gmail.com" method="POST">
+                    <div class="fields">
+                        <div class="field name">
+                            <i class="fas fa-user"></i>
+                            <label for="nombre"> Nombre completo</label>
+                            <input type="text" class="fullname" name="nombre" id="nombre(s)" title="¿Nombres?" autofocus placeholder= "Nombre(s)" required>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="fields">
+                        <div class="field name">
+                            <i class="fa-solid fa-envelope"></i>
+                            <label for="mail"> Email</label>
+                            <input type="email" id="email" name="email" class="form-control" id="Email" title="¿ya puso su correo electrónico?" autofocus placeholder= "Correo Electrónico" required>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="field name">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <label for="Phone"> Teléfono</label>
+                            <input type="phone" class="form-control" name="phone" id="phone" title="No olvide escribir su número telefónico" pattern="+52(993)[0-9][0-9][0-9,0-9]" placeholder= "+52(993)00-00-000" autofocus required>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="fields">
+                    <!-- Campos de entrada para el municipio de procedencia y el asunto -->
+                    <div class="fields">
+                        <div class="field name">
+                            <i class="fa-solid fa-map"></i>
+                            <label for="text"> Procedencia</label>
+                            <input type="text" class="form-control" name="Municipios" id="municipio" placeholder= "Municipio de procedencia" autofocus required>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="field name">
+                            <i class="fa-regular fa-message"></i>
+                            <label for="text"> Asunto</label>
+                            <input type="text" class="form-control" name="Asunto" id="asunto" placeholder= "Coloque su asunto..." title="Coloque su asunto" autofocus required>
+                        </div>
+                        <br>
+                        <br>
+                    </div>                        
+                    <br>
+                    <br>
+                    <br>
+                    <div class="colum left">
+                        <!-- Definición del área de botones del formulario -->
+                    <div class="button-area">
+                        <!-- Campos ocultos que indican la siguiente página y si se utiliza un sistema de captcha -->
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- Botón de envío del formulario -->
+                        <button class="send-msg" type="submit" name="send" id="sendBtn">
+                            Enviar
+                            <!-- Icono de flecha para indicar el envío --> 
+                            <i class="fa-solid fa-arrow-rotate-left"></i>
+                        </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+                    </div>
+    </div>
+</section>
+<!-- footer -->
+<footer>
+    <span style="color: #DBAC34; font-size: 18px;"><b>Creado por <a href="https://www.facebook.com/AGMX25">Alpha Group <i class="fa-solid fa-copyright"></i></a>  y <a href="https://www.facebook.com/hkike" style="text-decoration: none;">Ikxs Sanz <i class="fa-solid fa-crown"></i></a> </b> | <span class="far fa-copyright"></span><b>2023 en Villahermosa, Tabasco, México. Y Mérida,Yucatan, México </b></span>
+ <br>   
+ <br>
+ <p style="color: #DBAC34; font-size:18px;"><b>Visita mis redes sociales</b></p> 
+ <i class="fas fa-arrow-down" style="color: #DBAC34;"></i> 
+ <ul>
+      <li style="list-style: none;">
+          <a href="https://twitter.com/kike_sanz25" style="color:#1da1f2"><i class="fab fa-twitter-square fa-2x"></i></a>
+          <span></span>
+          <a href="https://www.facebook.com/hkike" style="color:#3b5998;"><i class="fab fa-facebook-square fa-2x"></i></a>
+          <span></span>
+          <a href="https://www.instagram.com/kikesanz25/?hl=es-la" style="color:#833ab4""><i class="fab fa-instagram fa-2x"></i></a>
+          <span></span>
+          <a href="https://wa.me/1529931652632?text=Me%20Gusta%20tu%20landing" style="color:#25d366"><i class="fab fa-whatsapp-square fa-2x"></i></a>
+          <span></span>
+          <a href="https://github.com/KikxS25" style="color:#333"><i class="fa-brands fa-github fa-2x"></i></a>     
+        </li>
+  </ul>
+</footer>
+
+  <!--Carga todos los scripts-->
+<script src="/CEAS1/script.js"></script>
+<script type="text/javascript">
+</script>
+</html>
+
